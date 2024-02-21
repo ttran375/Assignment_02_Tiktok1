@@ -1,5 +1,9 @@
 # Programming II
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ttran375/Assignment_02_Tiktok1)
+
+[![Style Check](https://github.com/ttran375/Assignment_02_Tiktok1/actions/workflows/main.yml/badge.svg)](https://github.com/ttran375/Assignment_02_Tiktok1/actions/workflows/main.yml)
+
 Maximum points for this work is 50 marks.
 
 TikTok is a video-sharing social networking service owned by ByteDance,
