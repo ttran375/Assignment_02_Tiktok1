@@ -1,0 +1,1 @@
+docker run -e RUN_LOCAL=true -e VALIDATE_JSCPD=false -v "$(pwd)":/tmp/lint github/super-linter
