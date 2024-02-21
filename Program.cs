@@ -5,10 +5,10 @@ class Program
 {
     static void Main()
     {
-        TikTokManager.Show();  // Display all TikToks
-        TikTokManager.Show("#Dance");  // Display TikToks with a specific hashtag
-        TikTokManager.Show(25);  // Display TikToks with length greater than 25
-        TikTokManager.Show(Audience.Group);  // Display TikToks for a specific audience
+        TikTokManager.Show();
+        TikTokManager.Show("#Dance");
+        TikTokManager.Show(25);
+        TikTokManager.Show(Audience.Group);
     }
 }
 
@@ -66,7 +66,6 @@ public class TikTok
 public static class TikTokManager
 {
     private static List<TikTok> TIKTOKS;
-    private static string FILENAME = "yourfilename.txt"; // Set your actual filename
 
     static TikTokManager()
     {
@@ -79,9 +78,9 @@ public static class TikTokManager
         TIKTOKS.Add(new TikTok("John", 30, "#Dance", Audience.World));
         TIKTOKS.Add(new TikTok("Alice", 20, "#Comedy", Audience.Group));
         TIKTOKS.Add(new TikTok("Bob", 15, "#LipSync", Audience.Special));
-        // Add more TikTok objects as needed
 
-        // Add code to read from file in production
+
+
     }
 
     public static void Show()
