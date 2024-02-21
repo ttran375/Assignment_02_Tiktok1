@@ -63,27 +63,26 @@
 
     public static class TikTokManager
     {
-        private static List<TikTok> TIKTOKS;
+        private static readonly List<TikTok> s_tIKTOKS;
 
         static TikTokManager()
         {
-            TIKTOKS = [];
+            s_tIKTOKS = [];
             Initialize();
         }
 
         public static void Initialize()
         {
-            TIKTOKS.Add(new TikTok("John", 30, "#Dance", Audience.World));
-            TIKTOKS.Add(new TikTok("Alice", 20, "#Comedy", Audience.Group));
-            TIKTOKS.Add(new TikTok("Bob", 15, "#LipSync", Audience.Special));
-
-
-
+            s_tIKTOKS.Add(new TikTok("John", 30, "#Dance", Audience.World));
+            s_tIKTOKS.Add(new TikTok("Alice", 20, "#Comedy", Audience.Group));
+            s_tIKTOKS.Add(new TikTok("Bob", 15, "#LipSync", Audience.Special));
+            s_tIKTOKS.Add(new TikTok("Charlie", 25, "#Funny", Audience.Group));
+            s_tIKTOKS.Add(new TikTok("David", 18, "#Music", Audience.World));
         }
 
         public static void Show()
         {
-            foreach (var tiktok in TIKTOKS)
+            foreach (var tiktok in s_tIKTOKS)
             {
                 Console.WriteLine(tiktok);
             }
@@ -91,7 +90,7 @@
 
         public static void Show(string hashtag)
         {
-            foreach (var tiktok in TIKTOKS)
+            foreach (var tiktok in s_tIKTOKS)
             {
                 if (tiktok.HashTag.Equals(hashtag, StringComparison.OrdinalIgnoreCase))
                 {
@@ -102,7 +101,7 @@
 
         public static void Show(int length)
         {
-            foreach (var tiktok in TIKTOKS)
+            foreach (var tiktok in s_tIKTOKS)
             {
                 if (tiktok.Length > length)
                 {
@@ -113,7 +112,7 @@
 
         public static void Show(Audience audience)
         {
-            foreach (var tiktok in TIKTOKS)
+            foreach (var tiktok in s_tIKTOKS)
             {
                 if (tiktok.Audience == audience)
                 {
